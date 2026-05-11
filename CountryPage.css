@@ -1,0 +1,89 @@
+/* =====================
+   Country Detail Page
+   ===================== */
+
+.country-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+}
+
+.back-btn:hover {
+  background: #f0f0f0;
+}
+
+.country-page__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .country-page__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.country-page__flag {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.country-page__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.country-page__official {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.country-page__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.country-page__details p {
+  margin: 0.4rem 0;
+}
+
+.border-badge {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  margin: 0.25rem;
+  font-size: 0.85rem;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.page-status {
+  padding: 2rem;
+  color: #666;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.page-status--error {
+  color: #c0392b;
+}
